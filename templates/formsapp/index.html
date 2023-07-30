@@ -1,0 +1,150 @@
+{% extends "formsapp/base.html" %}
+{% load static %}
+
+{% block content1 %}
+  <div class="jumbotron m-5 bg-success rounded-3 p-3">
+    <h1 class="text-white">START YOUR CODING <br>ADVENTURE TODAY WITH <span class="text-info">[LEARN CODING]</span></h1>
+    <p class="lead text-warning">You can learn all programin easily..</p>
+    <hr class="my-4 alert-primary">
+  </div>
+
+  <div class="container-fluid d-flex align-content-center justify-content-center" id="jumbo">
+    <img src="{% static 'formsapp/images/home.jpg' %}" alt="Home_Image" class="p-4 border border-white" width="550px" height="300px">
+  </div>
+
+  <div class="jumbotron  m-5  text-center p-1" id="html">
+    <div class="text-warning  h1">Front-end Development</div> 
+      <a href="https://www.w3schools.com/html/default.asp" class="btn btn-primary mt-3 ms-2">Html</a>
+      <a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary mt-3 ms-2">Css</a>
+      <a href="https://www.w3schools.com/bootstrap5/index.php" class="btn btn-primary mt-3 ms-2">Bootstrap</a>
+      <a href="https://www.w3schools.com/js/default.asp" class="btn btn-primary mt-3 ms-2">JavaScript</a>
+  </div>
+
+<div class=" border border-success">
+  <h3 class="text-center bg-success text-white p-1">Popular Programing</h3>
+  <div class="row m-5 bg-gradient text-center" id="tutorial">
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>Python Tutorial</h4>
+      <a href="https://www.w3schools.com/python/default.asp" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>Java Tutorial</h4>
+      <a href="https://www.w3schools.com/java/default.asp" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>PHP Tutorial</h4>
+      <a href="https://www.w3schools.com/php/default.asp" class="btn btn-primary mt-3 ms-2 ">Learn</a>
+    </div> 
+  </div>
+
+  <div class="row m-5 bg-gradient text-center" id="tutorial">
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>C Language</h4>
+      <a href="https://www.w3schools.com/c/index.php" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>C++ Programing</h4>
+      <a href="https://www.w3schools.com/cpp/default.asp" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>C# Tutorial</h4>
+      <a href="https://www.w3schools.com/cs/index.php" class="btn btn-primary mt-3 ms-2 ">Learn</a>
+    </div> 
+  </div>
+
+  <div class="row m-5 bg-gradient text-center" id="tutorial">
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>SQL</h4>
+      <a href="https://www.w3schools.com/sql/" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>PL SQL</h4>
+      <a href="https://www.javatpoint.com/pl-sql-tutorial" class="btn btn-primary mt-3 ms-2">Learn</a>
+    </div> 
+    <div class="col-4 text-warning border border-white p-3"> 
+      <h4>DS</h4>
+      <a href="https://www.javatpoint.com/data-structure-tutorial" class="btn btn-primary mt-3 ms-2 ">Learn</a>
+    </div> 
+  </div>
+</div>
+
+
+  <div class="border border-success m-5">
+    <h3 class="text-center bg-success text-white p-1">Frameworks</h3>
+    <div class="row m-5 bg-gradient text-center" id="tutorial">
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>React.js</h4>
+        <a href="https://www.w3schools.com/REACT/DEFAULT.ASP" class="btn btn-primary mt-3 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Angular</h4>
+        <a href="https://www.javatpoint.com/angularjs-tutorial" class="btn btn-primary mt-3 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Django</h4>
+        <a href="https://www.geeksforgeeks.org/django-tutorial/" class="btn btn-primary mt-3 ms-2 ">Learn</a>
+      </div> 
+    </div>
+
+    <div class="row m-5 bg-gradient text-center" id="tutorial">
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Flask</h4>
+        <a href="https://www.geeksforgeeks.org/flask-tutorial/" class="btn btn-primary mt-3 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Spring Boot</h4>
+        <a href="https://www.javatpoint.com/spring-boot-tutorial" class="btn btn-primary mt-0 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Hibernate</h4>
+        <a href="https://www.javatpoint.com/hibernate-tutorial" class="btn btn-primary mt-3 ms-2 ">Learn</a>
+      </div> 
+    </div>
+
+    <div class="row m-5 bg-gradient text-center" id="tutorial">
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>jQuery</h4>
+        <a href="https://www.w3schools.com/jquery/default.asp" class="btn btn-primary mt-3 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Meteor</h4>
+        <a href="https://www.geeksforgeeks.org/meteor-introduction-to-meteor/" class="btn btn-primary mt-3 ms-2">Learn</a>
+      </div> 
+      <div class="col-4 text-warning border border-white p-3"> 
+        <h4>Asp.NET Core</h4>
+        <a href="https://www.w3schools.com/asp/default.ASP" class="btn btn-primary mt-0 ms-2 ">Learn</a>
+      </div> 
+    </div>
+  </div>
+
+  <div class="jumbotron  m-5  text-center p-1" id="html">
+    <div class="text-warning  h1">Office Tools</div> 
+      <a href="https://www.javatpoint.com/excel-tutorial" class="btn btn-primary mt-3 ms-2">Excel</a>
+      <a href="https://www.javatpoint.com/ms-word-tutorial" class="btn btn-primary mt-3 ms-2">MS Word</a>
+      <a href="https://www.javatpoint.com/powerpoint-tutorial" class="btn btn-primary mt-3 ms-2">Powerpoint</a>
+      <a href="https://www.javatpoint.com/power-bi" class="btn btn-primary mt-3 ms-2">Power BI</a>
+  </div>
+
+  <div class="jumbotron m-5  text-center p-3 rounded-3" id="html1">
+    <div class="text-warning  h1">Machine Learning</div> 
+      <a href="https://www.javatpoint.com/machine-learning" class="btn btn-primary mt-3 ms-2">Learn</a> 
+  </div>
+
+  <div class="jumbotron m-5  text-center p-3 rounded-3" id="html1">
+    <div class="text-warning  h1">Data Science</div> 
+      <a href="https://www.geeksforgeeks.org/data-science-tutorial/" class="btn btn-primary mt-3 ms-2">Learn</a> 
+  </div>
+
+  <div class="jumbotron m-5  text-center p-3 rounded-3" id="html1">
+    <div class="text-warning  h2">Swaftware Testing</div> 
+      <a href="https://www.javatpoint.com/software-testing-tutorial" class="btn btn-primary mt-3 ms-2">Learn</a> 
+  </div>
+
+  <div class="jumbotron m-5  text-center p-3 rounded-3" id="html1">
+    <div class="text-warning  h3">Interview Q</div> 
+      <a href="https://www.javatpoint.com/interview-questions-and-answers" class="btn btn-primary btn-sm mt-3 ms-2">Learn</a> 
+  </div>
+
+{% endblock content1 %}
+
+

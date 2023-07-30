@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static   'formsapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static  'formsapp/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'formsapp/css/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'formsapp/css/index.css' %}">
+    <script src="{% static 'formsapp/js/bootstrap.js' %}"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark text-white ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary h3 bg-white rounded " href="#"> Learn Coding </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services' %}">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'cources' %}">Cources</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'aboutus' %}">About-us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'signup' %}">sign-Up</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Log-in</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contactus' %}">Contact-Us</a>
+              </li>
+
+              <li class="btn btn-primary active btn-sm">
+                <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    {% block content1 %} 
+
+    {% endblock content1 %}
+
+
+  <footer class="mt-5">
+    <div class="jumbotron  m-5 mb-0 bg-success text-center rounded-3 p-3">
+        <h3 class="text-white text-center">Our Services</h3>
+        <p class=" text-warning ">Learn Coding offers too many high quality services.Mail us on rahuljadhav1672@gmail.com, to get more information about given services.</p>
+          <span class="text-white">Website Designing</span><br>
+          <span class="text-white">Website Development</span><br>
+          <span class="text-white">Java Development</span><br>
+          <span class="text-white">PHP Development</span><br>
+          <span class="text-white">WordPress</span><br>
+          <span class="text-white">Graphic Designing</span><br>
+          <span class="text-white">Logo</span><br>
+          <span class="text-white">Digital Marketing</span><br>
+          <span class="text-white">On Page and Off Page SEO</span><br>
+          <span class="text-white">PPC</span><br>
+          <span class="text-white">Content Development</span><br>
+          <span class="text-white">Classroom and Online Training</span><br>
+          <span class="text-white">Corporate Training</span><br>
+          <span class="text-white">Data Entry</span><br>
+    </div>
+
+    <div class="jumbotron m-5 mt-0 bg-light d-flex align-content-center justify-content-center "></div>
+      <div class="text-center p-4 rounded-1 bg-secondary border border-white  rounded-1">
+        <h5 style="font-family:fantasy;" class="text-white text-center">About-Us</h5>   
+        <div class="jumbotron text-center bg-secondary mt-0">
+          <div class="d-flex align-content-center justify-content-center text-white">
+          <p>LearnCoding is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using LearnCoding.</p>
+          </div>
+        </div>
+        <a href="{% url 'aboutus' %}" class="btn btn-primary btn-sm">About-us</a> <br>
+
+      </div>
+      <div class="text-center p-4 rounded-1 bg-secondary border border-white  rounded-1">
+        <h5 style="font-family:fantasy;" class="text-white text-center">Contact-Us</h5>   
+        <div class="jumbotron text-center bg-secondary mt-0">
+          <div class="d-flex align-content-center justify-content-center text-white">
+            Phone:-91+ 9356603500 <br>
+            Email:-rahuljadhav1672@gmail.com <br>
+            Location:-India ,Maharashtra, pune 411040 <br>
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <a href="{% url 'contactus' %}" class="btn btn-primary btn-sm">Contact-us</a> <br>
+          <hr>
+           <mark class="text-primary bg-white rounded-1 mt-2">LearnCoding</mark>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "formsapp/base.html" %}
+
+{% load static %}
+
+{% block content1 %}
+  
+<div class="jumbotron d-flex align-content-center justify-content-center m-5">
+    <form action="" method="POST" class="m-5">
+        {% csrf_token %}
+            {{form.as_P}}
+    
+            <input type="submit" value="save" class="btn btn-success">
+    </form>
+</div>
+
+{% endblock content1 %}

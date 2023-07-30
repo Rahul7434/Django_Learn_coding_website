@@ -1,0 +1,41 @@
+{% extends "formsapp/base.html" %}
+{% load static %}
+
+{% block content1 %}
+    <div class="h4  w-50 m-4 rounded-5 text-center jumbotron bg-transparent text-warning">
+    {% if messages %}
+      {% for message in messages %}
+        {% if messages.tags %}  {{messages.tags}}" {% endif %} {{message}}
+      {% endfor %}            
+    {% endif %}
+    </div>
+
+    <hr>
+
+    <div class="jumbotron m-5 bg-transparent d-flex align-content-center justify-content-center">
+      
+        <form action="" method="POST" novalidate class="bg-transparent p-3">
+          <h4 class="">User Detail</h4>
+          <h6>you can edit your profile</h6>
+            {% csrf_token %}
+            {% for fm in form  %}
+              <table>
+                <tr>
+                    <th>{{fm.label_tag}}</th>
+                    <td>{{fm}}</td> <br>
+                    <span class="text-danger">{{fm.errors|striptags}}</span>
+                </tr>
+              </table>
+            {% endfor %}
+            <input type="submit" value="save" class="btn btn-success mt-2">
+        </form>
+    </div>
+
+    <div class="jumbotron row m-5 d-flex align-content-center justify-content-center">
+                <a href="{% url 'changepass' %}" class="m-1 btn btn-default col-3 h6">Chnage Password</a>
+                <hr>
+                <br><a href="{% url 'logout' %}" class="btn btn-default m-1 col-3 h6">Logout</a>
+                <hr>
+    </div>
+{% endblock content1 %}
+

@@ -1,0 +1,46 @@
+{% extends "formsapp/base.html" %}
+{% load static %}
+
+{% block content1 %}
+  <div class="jumbotron d-flex align-content-center justify-content-center p-3">
+    <form action="" method="POST" novalidate class="p-5">
+      <h4 class="bg bg-transparent ">Change Password</h4>
+        {% csrf_token %}
+        {% for fm  in form  %}
+            <table>
+                <tr>
+                    <th>{{fm.label_tag}}</th>
+                    <td>{{fm}}</td> <br>
+                    <span> {{fm.errors|striptags}} </span>
+                </tr>
+            </table> 
+        {% endfor %}
+        <input type="submit" value="Save" class="btn btn-success m-3">
+        <a href="{% url 'logout' %}" class="btn btn-info m-1">Logout</a>
+        <a href="{% url 'profile' %}" class="btn btn-info m-1">Profile</a>
+    </form>
+  </div>
+{% endblock content1 %}
+
+<!--{% extends "formsapp/base.html" %}
+{% load static %}
+
+{% block content1 %}
+  <div class="jumbotron d-flex align-content-center justify-content-center p-3">
+    <form action="" method="POST" novalidate class="p-5">
+      <h4 class="bg bg-transparent ">Logout</h4>
+      {% csrf_token %}
+      {% for fm  in form  %}
+          <table>
+              <tr>
+                  <th>{{fm.label_tag}}</th>
+                  <td>{{fm}}</td> <br>
+                  <span> {{fm.errors|striptags}} </span>
+              </tr>
+          </table> 
+      {% endfor %}
+      <input type="submit" value="submit" class="btn btn-success m-3">
+      <a href="{% url 'login' %}" class="btn btn-info">Logout</a>
+  </form>
+  </div>
+{% endblock content1 %}
