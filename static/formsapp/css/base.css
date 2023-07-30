@@ -1,0 +1,13 @@
+.nav-item{
+    font-size: larger;
+}
+.nav-item:hover{
+    
+    color: white;
+    background-color: blue;
+
+}
+.custom-link{
+    color:white;
+    text-decoration: none;
+}

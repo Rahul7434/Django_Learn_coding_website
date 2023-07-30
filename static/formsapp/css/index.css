@@ -1,0 +1,16 @@
+
+#jumbo{
+    background-image: url(/static/formsapp/images/homeback.jpg);
+    background-size:contain;
+    height: 100%;
+}
+#html{
+    background-color:rgb(29, 56, 56);
+}
+#html1{
+    background-color:rgb(40, 65, 87);
+}
+#tutorial div:hover{
+    opacity: 0.7;
+    border-radius:10px;
+}
